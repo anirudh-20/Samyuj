@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.login_page {
+  height: 100vh;
+  width: 100%;
+  /* background-color: lightblue; */
+  display: flex;
+}
+
+.login_page .left {
+  height: 100%;
+  width: 65%;
+  /* background-color: lightseagreen; */
+}
+
+.login_page .right {
+  height: 100%;
+  width: 35%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login_page .right h1 {
+  width: 100%;
+  position: relative;
+  bottom: 10%;
+  left: 1px;
+  color: lightskyblue;
+}
+.login_page .right h2 {
+  width: 100%;
+}
+
+.login_page .right input {
+  width: 100%;
+  margin: 15px;
+  padding: 4px 8px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.login_page .right button {
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.Name-Page {
+  width: 400px;
+  padding: 10% 0 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  max-width: 200px;
+  margin: 0 auto 100px;
+  padding: 25px;
+  text-align: center;
+  transform: scale(1.6);
+}
+
+.form input {
+  font-family: "Roboto", "sans-serif";
+  outline: 1;
+  background: rgb(226, 218, 218);
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.form button {
+  font-family: "Roboto", "sans-serif";
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.known-form button {
+  margin: 7px 0px;
+}
+.form p {
+  font-family: "Roboto", "sans-serif";
+  font-size: 60%;
+  margin: 15px;
+}
+
+.form button:hover {
+  background: #43a047;
+}
+
+.form .unknown-form {
+  display: block;
+}
+
+#video-grids {
+  display: flex;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-grid {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  
+}
+
+h1 {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+video {
+  display: block;
+  flex: 1;
+  object-fit: cover;
+  border: 5px solid #000;
+  max-width: 600px;
+  border-radius: 25px;
+}
+
+.mainclone {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_right {
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+  background-color: #242324;
+}
+
+.main_controls_block {
+  flex-direction: row;
+  display: flex;
+}
+
+.main_controls {
+  display: flex;
+  flex-direction: row;
+  background-color: #1c1e20;
+  color: white;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.main_controls_button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 3px 10px;
+  min-width: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_videos {
+  flex-grow: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.leave_red {
+  color: white;
+  background-color: red;
+  border-radius: 5%;
+}
+
+.main__message_container {
+  padding: 20px 15px;
+  display: flex;
+}
+
+.main__message_container input {
+  flex-grow: 1;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.main__chat_window {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.main_controls_button:hover {
+  background-color: #686666;
+  border-radius: 25px;
+}
+
+.main_right_header {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #3d3d42;
+}
+
+.message {
+  color: white;
+  list-style-type: none;
+  border: 2px solid #3d3d42;
+  margin-bottom: 5px;
+}
+
+.main_right_header h6 {
+  animation: animate 20s linear infinite;
+  background-image: linear-gradient(to right, #f00, #ff0, #0ff, #0f0, #00f);
+  background-size: 1000%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
